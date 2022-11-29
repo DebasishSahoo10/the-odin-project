@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: space-around;
+}
