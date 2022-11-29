@@ -1,0 +1,17 @@
+
+.container {
+    background-color: brown;
+    display: flex;
+    height: 100px;
+    width: 700px;
+    padding: 2rem 2rem;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    background-color: blanchedalmond;
+    border: 5px black solid;
+    padding: 1rem 1rem;
+    align-items: center;
+}
