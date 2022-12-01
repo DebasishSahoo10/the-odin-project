@@ -1,0 +1,139 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    font-size: 18px;
+    display: flex;
+    gap: 32px;
+}
+
+.header-left {
+    font-size: 24px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.hero-left {
+    max-width: 500px;
+}
+
+img {
+    width: 500px;
+}
+
+.hero-text {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-box {
+    display: flex;
+    gap: 52px;
+}
+
+.card-holder {
+    height: 180px;
+    width: 180px;
+    border: 2px black solid;
+    border-radius: 22px;
+}
+
+.card-individual {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.quote-text {
+    width: 950px;
+}
+
+.quote-author {
+    width: 950px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+}
+
+.CTA-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.CTA-box {
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: black;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CTA-box button {
+    color: white;
+    border: 2px white solid;
+    border-color: white ;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card-heading {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.quote-text {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.CTA-tittle div {
+    font-weight: bold;
+    font-size: 24px;
+}
