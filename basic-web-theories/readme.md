@@ -6,3 +6,4 @@
 ## HTML Basics
 - **_Absolute Links_** - Links to pages on other websites on the internet are called absolute links.
 - **_Relative Links_** - Links to other pages within our own website are called relative links.
+- **_Semantic HTML_** - Semantic HTML is a principle in Coding which says that every content we put in our HTML should be under right tag. for an example if we are putting footer then all the footer contents should go under the footer tag. same goes for header, label and so on. now there is a mis conception here, that putting a wrong tag and a good ID or class will make it semantic, but no it doesn’t. It is important for the accessibility point of view of the website. 
