@@ -3,7 +3,7 @@ const rockBtn = document.querySelector("#rock-btn")
 const scissorsBtn = document.querySelector("#scissor-btn")
 const outputArea = document.querySelector("#output-area")
 
-
+let score = 0
 
 const choiceArray = ["rock", "paper", "scissors"]
 
@@ -12,9 +12,8 @@ const computerChoiceRandomizer = () => {
     console.log(computerChoice)
 }
 
-var testingFunc = () => {
-    console.log("testing")
-}
+
+
 
 
 
