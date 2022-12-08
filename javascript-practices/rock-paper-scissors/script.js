@@ -5,6 +5,12 @@ const outputArea = document.querySelector("#output-area")
 
 
 
+const choiceArray = ["rock", "paper", "scissors"]
+
+const computerChoiceRandomizer = () => {
+    let computerChoice = choiceArray[Math.floor(Math.random()*choiceArray.length)]
+    console.log(computerChoice)
+}
 
 var testingFunc = () => {
     console.log("testing")
@@ -12,6 +18,6 @@ var testingFunc = () => {
 
 
 
-paperBtn.addEventListener("click", testingFunc)
-rockBtn.addEventListener("click", testingFunc)
-scissorsBtn.addEventListener("click", testingFunc)
+paperBtn.addEventListener("click", computerChoiceRandomizer)
+rockBtn.addEventListener("click", computerChoiceRandomizer)
+scissorsBtn.addEventListener("click", computerChoiceRandomizer)
