@@ -1,6 +1,4 @@
-const paperBtn = document.querySelector("#paper-btn")
-const rockBtn = document.querySelector("#rock-btn")
-const scissorsBtn = document.querySelector("#scissor-btn")
+const userBtns = document.querySelectorAll("button")
 const resultArea = document.querySelector("#result-area")
 
 let userScore = 0
@@ -37,12 +35,8 @@ const compareChoices = (userChoice) => {
 
 
 
-paperBtn.addEventListener("click", (e)=>{
-    compareChoices(e.target.innerHTML.toLowerCase())
-})
-rockBtn.addEventListener("click", (e)=>{
-    compareChoices(e.target.innerHTML.toLowerCase())
-})
-scissorsBtn.addEventListener("click", (e)=>{
-    compareChoices(e.target.innerHTML.toLowerCase())
+userBtns.forEach(e=>{
+    e.addEventListener("click", ()=>{
+        compareChoices(e.value)
+    })
 })
