@@ -22,9 +22,18 @@ const winPairs = {
 }
 
 
-
-
-
+const compareChoices = (userChoice) => {
+    let computerChoice = computerChoiceRandomizer()
+    if (userChoice == computerChoice) {
+        resultArea.innerText = "It is a Tie"
+    } else if (winPairs[userChoice] == computerChoice) {
+        userScore +=1
+        resultArea.innerText = "You Won"
+    } else {
+        computerScore += 1
+        resultArea.innerText = "Computer Won"
+    }
+}
 
 
 
