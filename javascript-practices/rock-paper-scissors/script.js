@@ -1,15 +1,24 @@
 const paperBtn = document.querySelector("#paper-btn")
 const rockBtn = document.querySelector("#rock-btn")
 const scissorsBtn = document.querySelector("#scissor-btn")
-const outputArea = document.querySelector("#output-area")
+const resultArea = document.querySelector("#result-area")
 
-let score = 0
+let userScore = 0
+let computerScore = 0
 
 const choiceArray = ["rock", "paper", "scissors"]
 
 const computerChoiceRandomizer = () => {
-    let computerChoice = choiceArray[Math.floor(Math.random()*choiceArray.length)]
-    console.log(computerChoice)
+    let randomChoice = choiceArray[Math.floor(Math.random()*choiceArray.length)]
+    return randomChoice
+}
+
+
+
+const winPairs = {
+    "rock" : "scissors",
+    "paper" : "rock",
+    "scissors" : "paper"
 }
 
 
@@ -17,6 +26,14 @@ const computerChoiceRandomizer = () => {
 
 
 
-paperBtn.addEventListener("click", computerChoiceRandomizer)
-rockBtn.addEventListener("click", computerChoiceRandomizer)
-scissorsBtn.addEventListener("click", computerChoiceRandomizer)
+
+
+paperBtn.addEventListener("click", (e)=>{
+    compareChoices(e.target.innerHTML.toLowerCase())
+})
+rockBtn.addEventListener("click", (e)=>{
+    compareChoices(e.target.innerHTML.toLowerCase())
+})
+scissorsBtn.addEventListener("click", (e)=>{
+    compareChoices(e.target.innerHTML.toLowerCase())
+})
