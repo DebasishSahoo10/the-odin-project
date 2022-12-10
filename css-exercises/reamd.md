@@ -17,3 +17,7 @@ Inline puts the element only till the space it needs, hence stacking multiple el
 ### (5) Importance of CSS Variables. Demonstration with code was also asked.
 
 Suppose in my web page I am using a single color as a theme color which is used in most of my elements. now, If I use the color code directly in the class properties, then if I want to change that color, I have to go to each class it is used and change it there which will be a tedious process. with CSS variables, I can assign a variable to that color code and use that variable in each and any class I need it in, so when I change the color in future, it will automatically be changed everywhere it is used.
+
+### (6) Distinguish between `display:none` and `visibility:hidden`
+
+`display:none` means that the tag in question will not appear on the page at all (although you can still interact with it through the DOM). There will be no space allocated for it between the other tags. `visibility:hidden` means that unlike `display:none`, the tag is not visible, but space is allocated for it on the page.
