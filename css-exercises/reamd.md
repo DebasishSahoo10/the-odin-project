@@ -13,3 +13,7 @@ Inline items take only the height and width required for the element while Block
 ### (4) What is the difference between inline and inline-block?
 
 Inline puts the element only till the space it needs, hence stacking multiple elements in a horizontal way. inline-block do exact the same thing, but it also allows us to play with width and height of those elements. and also inline-block allows us add margin and padding on all four sides of the element while inline allows only for left and right.
+
+### (5) Importance of CSS Variables. Demonstration with code was also asked.
+
+Suppose in my web page I am using a single color as a theme color which is used in most of my elements. now, If I use the color code directly in the class properties, then if I want to change that color, I have to go to each class it is used and change it there which will be a tedious process. with CSS variables, I can assign a variable to that color code and use that variable in each and any class I need it in, so when I change the color in future, it will automatically be changed everywhere it is used.
