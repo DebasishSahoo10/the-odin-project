@@ -28,11 +28,11 @@ const compareChoices = (userChoice) => {
         scoreArea.innerText = `Computer's score is ${computerScore} and Your score is ${userScore}`
     } else if (winPairs[userChoice] == computerChoice) {
         userScore +=1
-        resultArea.innerText = "You Won"
+        resultArea.innerText = "You Won 🎉"
         scoreArea.innerText = `Computer's score is ${computerScore} and Your score is ${userScore}`
     } else {
         computerScore += 1
-        resultArea.innerText = "Computer Won"
+        resultArea.innerText = "Computer Won 🤖"
         scoreArea.innerText = `Computer's score is ${computerScore} and Your score is ${userScore}`
     }
 }
