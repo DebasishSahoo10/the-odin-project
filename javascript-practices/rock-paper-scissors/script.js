@@ -1,5 +1,6 @@
 const userBtns = document.querySelectorAll("button")
 const resultArea = document.querySelector("#result-area")
+const scoreArea = document.querySelector('#score-area')
 
 let userScore = 0
 let computerScore = 0
@@ -24,12 +25,15 @@ const compareChoices = (userChoice) => {
     let computerChoice = computerChoiceRandomizer()
     if (userChoice == computerChoice) {
         resultArea.innerText = "It is a Tie"
+        scoreArea.innerText = `Computer's score is ${computerScore} and Your score is ${userScore}`
     } else if (winPairs[userChoice] == computerChoice) {
         userScore +=1
         resultArea.innerText = "You Won"
+        scoreArea.innerText = `Computer's score is ${computerScore} and Your score is ${userScore}`
     } else {
         computerScore += 1
         resultArea.innerText = "Computer Won"
+        scoreArea.innerText = `Computer's score is ${computerScore} and Your score is ${userScore}`
     }
 }
 
