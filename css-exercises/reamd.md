@@ -21,3 +21,11 @@ Suppose in my web page I am using a single color as a theme color which is used 
 ### (6) Distinguish between `display:none` and `visibility:hidden`
 
 `display:none` means that the tag in question will not appear on the page at all (although you can still interact with it through the DOM). There will be no space allocated for it between the other tags. `visibility:hidden` means that unlike `display:none`, the tag is not visible, but space is allocated for it on the page.
+
+### (7) What are the different Position Properties in CSS ?
+
+Default Position value is Static which goes with the document flow. Then comes Relative it is just like Static and still have it’s own space in Document Flow, but here it has access to its own left, right, top, bottom properties. then comes absolute, in which element looses its space from document flow and to get its own area it has access to all its rest of the positional properties and then comes Fixed which will be all the time at a fixed position irrespective scroll behavior and lastly comes Sticky, which is there in its space but when its space goes out of the view it sticks itself to the top of viewport.
+
+### (8) What is the difference between REM and EM ?
+
+EM is relative to the font-size of its direct or nearest parent. REM is relative to the HTML (root) font-size.
