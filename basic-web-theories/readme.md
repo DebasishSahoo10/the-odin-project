@@ -4,7 +4,9 @@
 - But suppose multiple devices are requesting different datas over the same internet source then how can we protect packets from being misplaced with some one other’s packets. the soluition is a combination of Router, IP Adress and MAC Adress. and the whole process is about wrapping and un-wrapping infortmation and information request everytime it reaches a traffic point in the internet route.
 - **_DNS_** : <b style="color:darkred">Domain Name System</b> It converts a website name/adress into an IP adress through which that website can have an unique identity in the ocean of internet.
 
-- _**What is CLI?**_ - Command Line Interface is way of coding which enables us to check some input, outputs and functionalities of our code in an interpreter like Terminal or Shell. You can’t do much using CLI, so we can say that it is sort of restricted for developer only use especially for testing and debugging.
+- _**What is CLI?**_ : Command Line Interface is way of coding which enables us to check some input, outputs and functionalities of our code in an interpreter like Terminal or Shell. You can’t do much using CLI, so we can say that it is sort of restricted for developer only use especially for testing and debugging.
+- _**What is a Package?**_ : a Package is a collection of various codes built by other developers to help other developers while implementing a repetitive and very common functionality. in coding world, it is called STANDING ON GIANT’s SHOULDERS. some simple package examples can be CHALK and READLINE-SYNC.
+- _**What are RegEx (Regular Expressions)**_ : Regular expressions are declared patterns used to match character combinations in strings. They are normally used to filter, match or delete a  particular type of characters from a given string.
 ## HTML Basics
 - **_Absolute Links_** - Links to pages on other websites on the internet are called absolute links.
 - **_Relative Links_** - Links to other pages within our own website are called relative links.
