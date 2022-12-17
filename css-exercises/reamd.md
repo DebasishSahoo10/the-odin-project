@@ -29,3 +29,7 @@ Default Position value is Static which goes with the document flow. Then comes R
 ### (8) What is the difference between REM and EM ?
 
 EM is relative to the font-size of its direct or nearest parent. REM is relative to the HTML (root) font-size.
+
+### (9) Difference between CLASS and ID
+
+both are CSS selectors but a we can assign one class to multiple items to make things easy sometimes but ID has to be unique to each element.
