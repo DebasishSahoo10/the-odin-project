@@ -24,3 +24,9 @@ Promises in JS is just like real world promises. It is syntax system through whi
 ### (6) What is the 2nd Parameter passed to the Event Listener and why it is not in curly braces?
 
 2nd Param there is a Callback function which simply means that it will be executed only when a particular trigger happens. and the reason it is not in curly braces is that in JS we can pass a function inside another function just by calling its name and declaring it somewhere else in the same script file.
+
+### (7) What is parseInt()
+
+parsing : it is a process where we break something down into its parts to study them individually and to understand them better.
+
+parseInt() : it is a function that takes a string which has numbers in it and returns only the numbers in an integer data type. and too add here, it will only give us the numbers from starting of the string to the point it encounters a letter or a symbol and if the string starts directly with a letter then it will output nothing.
