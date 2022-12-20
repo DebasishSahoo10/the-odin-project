@@ -20,3 +20,7 @@ DOM stands for Document Object Model. It is a system that takes documents like H
 ### (5) What are Promises?
 
 Promises in JS is just like real world promises. It is syntax system through which our code takes some task from us and promises us to give some output on it, whenever the output is ready. now there are three states in a promise. while code is working on it, it mean Promise is Pending. when it gave the output, it means Promise is Fulfilled and if it rejects to give what is asked, it means the Promise is rejected. for every state we can have different syntaxes, like for fulfilled we can say (.then) and for rejected we can say (.catch). I also want to add that promises is a part asynchronous programming in JS. Why this is important? Because JS is a single threaded language and when we do something like a fetch call, a CODE BLOCKING happens, to avoid that and give users a smooth flow we need async programming like Promises.
+
+### (6) What is the 2nd Parameter passed to the Event Listener and why it is not in curly braces?
+
+2nd Param there is a Callback function which simply means that it will be executed only when a particular trigger happens. and the reason it is not in curly braces is that in JS we can pass a function inside another function just by calling its name and declaring it somewhere else in the same script file.
