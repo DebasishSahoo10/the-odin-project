@@ -30,3 +30,9 @@ Promises in JS is just like real world promises. It is syntax system through whi
 parsing : it is a process where we break something down into its parts to study them individually and to understand them better.
 
 parseInt() : it is a function that takes a string which has numbers in it and returns only the numbers in an integer data type. and too add here, it will only give us the numbers from starting of the string to the point it encounters a letter or a symbol and if the string starts directly with a letter then it will output nothing.
+
+### (8) Differences between Vanilla JS & React JS
+
+- *Declarative vs. Imperative Programming* : In vanilla JS we have to all the task from execution to rendering. we have to handle both the WHAT and HOW. but in REACT, we can just care WHAT part and REACT with its superpowers like JSX can handle the HOW part.
+- *Use of components in React* : In react we can have different components written on different files rather than like vanilla JS where every code will be at once place. so, we can say that, React’s components increase the clarity, efficiency and readability of our codes.
+- *Actual DOM vs. Virtual DOM* : vanilla JS takes the whole DOM changes it, then pushes the whole DOM again for render. it is sort heavy for the browser, hence slow too. but React use Virtual DOM, which will change and push the only part we want changed and re-rendered.
