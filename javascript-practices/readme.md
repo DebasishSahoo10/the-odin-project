@@ -36,3 +36,7 @@ parseInt() : it is a function that takes a string which has numbers in it and re
 - *Declarative vs. Imperative Programming* : In vanilla JS we have to all the task from execution to rendering. we have to handle both the WHAT and HOW. but in REACT, we can just care WHAT part and REACT with its superpowers like JSX can handle the HOW part.
 - *Use of components in React* : In react we can have different components written on different files rather than like vanilla JS where every code will be at once place. so, we can say that, React’s components increase the clarity, efficiency and readability of our codes.
 - *Actual DOM vs. Virtual DOM* : vanilla JS takes the whole DOM changes it, then pushes the whole DOM again for render. it is sort heavy for the browser, hence slow too. but React use Virtual DOM, which will change and push the only part we want changed and re-rendered.
+
+### (9) Why is useState being used in React ?
+
+useState is a hook in react which is used to hold a state or value of a component. the way it works is like this : every useState gives us a variable (which holds the value or the state) and a function which can be used to update the value inside the variable. so we can use the function before the component which’s state we want to hold. and use variable any where we want that state to be shown or used.
