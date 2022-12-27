@@ -33,3 +33,7 @@ EM is relative to the font-size of its direct or nearest parent. REM is relative
 ### (9) Difference between CLASS and ID
 
 both are CSS selectors but a we can assign one class to multiple items to make things easy sometimes but ID has to be unique to each element.
+
+### (10) What happens if a HTML element is styled using tag, ID and also class?
+
+Here style from CSS will be applied in this manner : first ID, then Class and then Tag.
