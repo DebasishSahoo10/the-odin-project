@@ -40,3 +40,7 @@ parseInt() : it is a function that takes a string which has numbers in it and re
 ### (9) Why is useState being used in React ?
 
 useState is a hook in react which is used to hold a state or value of a component. the way it works is like this : every useState gives us a variable (which holds the value or the state) and a function which can be used to update the value inside the variable. so we can use the function before the component which’s state we want to hold. and use variable any where we want that state to be shown or used.
+
+### (10) What do you think Javascript is synchronous or asynchronous?
+
+Javascript at its base is synchronous, and that is why we need thing likes promises, async, await to give it a asynchronous nature.
