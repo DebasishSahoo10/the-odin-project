@@ -1,7 +1,5 @@
 const gridTbl = document.querySelector('#grid-tbl')
-
-
-
+const clearBtn = document.querySelector('#clear-btn')
 
 const creatGrid = () => {
     for(let i=0; i<17; i++) {
@@ -20,4 +18,13 @@ const creatGrid = () => {
 }
 
 
+
+const clearGrid = () => {
+    const td = document.querySelectorAll('td')
+    td.forEach((e)=>{
+        e.style.backgroundColor = "transparent"
+    })
+}
+
 window.addEventListener("load", creatGrid)
+clearBtn.addEventListener("click", clearGrid)
