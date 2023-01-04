@@ -7,7 +7,6 @@ const operatorBtns = document.querySelectorAll('.operator-btns')
 
 let firstNum = ''
 let secondNum = ''
-// let testNum = ''
 let choosedSign = ''
 let result = ''
 
@@ -35,19 +34,29 @@ numBtns.forEach((e)=>{
     })
 })
 
+operatorBtns.forEach((e)=>{
+    e.addEventListener("click", (e)=>{
+        if (secondNum) {
+            operatorsFunc(firstNum, secondNum, choosedSign)
+            mainDisplay.innerText = result
+            firstNum = result
+            secondNum = ''
+            choosedSign = e.target.innerText
+        } else if (result) {
+            firstNum = result
+            choosedSign = e.target.innerText
+        } else {
+            choosedSign = e.target.innerText
+        }
+    })
+})
 
 equalBtn.addEventListener("click", ()=>{
-    // console.log(firstNum)
-    // console.log(secondNum)
     operatorsFunc(firstNum, secondNum, choosedSign)
     firstNum = ''
     secondNum = ''
     choosedSign = ''
-    console.log(result)
+    mainDisplay.innerText = result
 })
 
-operatorBtns.forEach((e)=>{
-    e.addEventListener("click", (e)=>{
-        choosedSign = e.target.innerText
-    })
-})
+
