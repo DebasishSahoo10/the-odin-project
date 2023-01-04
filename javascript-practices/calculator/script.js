@@ -3,7 +3,7 @@ const equalBtn = document.querySelector('#equal-btn')
 const mainDisplay = document.querySelector('#large-display')
 const operatorBtns = document.querySelectorAll('.operator-btns')
 const upperDisplay = document.querySelector('#upper-display')
-
+const clearBtn = document.querySelector('#clear-btn')
 
 let firstNum = ''
 let secondNum = ''
@@ -11,7 +11,7 @@ let choosedSign = ''
 let result = ''
 let upperContent = ''
 
-
+mainDisplay.innerText = 0
 
 const operatorsFunc = (num1, num2, operator) => {
     if (operator == '+') {
@@ -31,11 +31,11 @@ numBtns.forEach((e)=>{
         secondNum = secondNum + e.target.innerText
         mainDisplay.innerText = secondNum
         upperContent =  `${upperContent} ${secondNum}`
-        upperDisplay.innerText = upperContent
+        console.log(upperContent)
        } else {
-        firstNum = firstNum + e.target.innerText
+        firstNum = firstNum + Number(e.target.innerText)
         mainDisplay.innerText = firstNum
-        upperContent =  `${upperContent} ${firstNum}`
+        upperContent =  `${firstNum}`
        }
     })
 })
@@ -52,6 +52,8 @@ operatorBtns.forEach((e)=>{
         } else if (result) {
             firstNum = result
             choosedSign = e.target.innerText
+            upperContent = `${result} ${choosedSign}`
+            upperDisplay.innerText = upperContent
         } else {
             choosedSign = e.target.innerText
             upperContent = `${upperContent} ${choosedSign}`
@@ -66,6 +68,15 @@ equalBtn.addEventListener("click", ()=>{
     secondNum = ''
     choosedSign = ''
     mainDisplay.innerText = result
+    upperDisplay.innerText = ''
 })
 
-
+clearBtn.addEventListener("click", ()=>{
+    firstNum = ''
+    secondNum = ''
+    choosedSign = ''
+    result = ''
+    upperContent = ''
+    upperDisplay.innerText = upperContent
+    mainDisplay.innerText = 0
+})
