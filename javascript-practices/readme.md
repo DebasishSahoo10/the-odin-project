@@ -44,3 +44,7 @@ useState is a hook in react which is used to hold a state or value of a componen
 ### (10) What do you think Javascript is synchronous or asynchronous?
 
 Javascript at its base is synchronous, and that is why we need thing likes promises, async, await to give it a asynchronous nature.
+
+### (11) What is replace() function in JS?
+
+The Replace method searches for a string or a value or a regular expression and replaces it with given new characters. Now one thing to note here is that Replace function doesn’t change the original string, it produces a new one with replaced chars. It takes two params. first one is what is to search and replace in the string and the second param is the new chars.
