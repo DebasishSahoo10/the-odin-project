@@ -52,3 +52,7 @@ The Replace method searches for a string or a value or a regular expression and 
 ### (12) Reason for using the key in the code for each different element?
 
 there are two reasons basically, one is to give each element a unique identity through which browser can treat them as that. and second being it help in DOM manipulation, as browser won’t re render the element which key is already there with the browser.
+
+### (13) Number of ways of using fetch.
+
+at the end of the day fetch call is connecting our data and code to a given URL mostly an API but that connection can be various types like : GET which is used to get some data from API, POST is used to create something or push something on to the API and these list of syntax goes on further to things like PUT, PATCH and DELETE.
