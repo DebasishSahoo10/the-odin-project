@@ -48,3 +48,7 @@ Javascript at its base is synchronous, and that is why we need thing likes promi
 ### (11) What is replace() function in JS?
 
 The Replace method searches for a string or a value or a regular expression and replaces it with given new characters. Now one thing to note here is that Replace function doesn’t change the original string, it produces a new one with replaced chars. It takes two params. first one is what is to search and replace in the string and the second param is the new chars.
+
+### (12) Reason for using the key in the code for each different element?
+
+there are two reasons basically, one is to give each element a unique identity through which browser can treat them as that. and second being it help in DOM manipulation, as browser won’t re render the element which key is already there with the browser.
