@@ -60,3 +60,11 @@ at the end of the day fetch call is connecting our data and code to a given URL 
 ### (14) How to select element through their Attributes ?
 
 document.querySelector(’[attribute name = “value”]’)
+
+### (15) What is array destructuring in ES6 ?
+
+var thing = ["Table", "Chair", "Fan"];
+var [a, b, c] = thing;
+console.log(a); // Output: Table
+console.log(b); //Output: Chair
+console.log(c); //Output: Fan
