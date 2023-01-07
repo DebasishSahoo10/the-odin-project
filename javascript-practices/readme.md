@@ -68,3 +68,9 @@ var [a, b, c] = thing;
 console.log(a); // Output: Table
 console.log(b); //Output: Chair
 console.log(c); //Output: Fan
+
+### (16) How JavaScript runs on Browser,  Mobile Devices, Servers and other Machines ?
+
+**for Browsers** : there are JavaScript engines through which browsers decodes the JS code and runs it. the most popular JS engine is called V8 and it was developed by Google.
+
+**for other devices and servers** : so there is Node.JS  built on the engine of V8 and it runs JS code on servers, machines, desktops and mobile devices.
