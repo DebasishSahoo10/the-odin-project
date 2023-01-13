@@ -74,3 +74,15 @@ console.log(c); //Output: Fan
 **for Browsers** : there are JavaScript engines through which browsers decodes the JS code and runs it. the most popular JS engine is called V8 and it was developed by Google.
 
 **for other devices and servers** : so there is Node.JS  built on the engine of V8 and it runs JS code on servers, machines, desktops and mobile devices.
+
+### (17) What are the types of Functions in JavaScript ?
+
+**Function Declaration/Function Declaration** : Function Declaration is the traditional way to define a function. It is somehow similar to the way we define a function in other programming languages. We start declaring using the keyword *“function”.* Then we write the function name and then parameters.
+
+**Function Expression :** Function Expression is another way to define a function in JavaScript. Here we define a function using a variable and store the returned value in that variable.
+
+**Arrow Function** : Arrow functions are been introduced in the **ES6 version** of JavaScript. It is used to shorten the code. Here we do not use the “**function”** keyword and use the arrow symbol.
+
+**Anonnymous Function** : Any name that goes without a name is called anonymous function
+
+**Named Function Express** : If a Function Express goes with a name for the function (not the variable name), then it is called Named Function Express.
