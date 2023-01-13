@@ -86,3 +86,11 @@ console.log(c); //Output: Fan
 **Anonnymous Function** : Any name that goes without a name is called anonymous function
 
 **Named Function Express** : If a Function Express goes with a name for the function (not the variable name), then it is called Named Function Express.
+
+### What are the differences between ES5 and ES6 ?
+
+- ES5 supports primitive data types that are string, number, Boolean, null, and undefined. ES6 introduced a new primitive data type ‘symbol’ for supporting unique values.
+- There are only one way to define the variables by using the var keyword in ES5. There are two new ways to define variables that are let and const in ES6.
+- ES5 has a lower performance as compared to ES6.
+- Object manipulation is less time-consuming in ES6.
+- In ES5, both function and return keywords are used to define a function. An arrow function is a new feature introduced in ES6 by which we don’t require the function keyword to define the function.
