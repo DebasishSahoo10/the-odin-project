@@ -2,7 +2,7 @@
 
 
 body {
-    max-width: 98vw;
+    max-width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -80,6 +80,12 @@ p {
 a {
     text-decoration: none;
     color: #BF3939;
+}
+input:invalid {
+    border-color: #BF3939;
+}
+input:valid {
+    border-color: wheat;
 }
 
 /* --------------------------------------- */
