@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 body {
     display: grid;
     grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr;
+    gap: 15px;
     min-height: 100vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -19,8 +24,13 @@ body {
 .article {
     background-color: #BACBD9;
     grid-row: 3 / span 1;
+    padding: 20px;
 }
 .footer {
     background-color: #434A59;
     grid-column: 1 / span 2;
+}
+div {
+    border-radius: 10px;
+    text-align: center;
 }
