@@ -1,0 +1,19 @@
+body {
+    display: grid;
+}
+
+.header {
+    background-color: #434A59;
+}
+.footer {
+    background-color: #434A59;
+}
+.sidebar {
+    background-color: #F27052;
+}
+.menu {
+    background-color: #F27052;
+}
+.article {
+    background-color: #BACBD9;
+}
