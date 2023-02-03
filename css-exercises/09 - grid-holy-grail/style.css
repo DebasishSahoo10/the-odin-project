@@ -5,22 +5,22 @@ body {
 }
 
 .header {
-    background-color: yellow;
+    background-color: #F2D022;
     grid-column: 1 / span 2;
 }
 .sidebar {
-    background-color: red;
+    background-color: #FF7755;
     grid-row: 2/ span 2;
 }
 .nav {
-    background-color: aqua;
+    background-color: #00DCFE;
     grid-row: 2 / span 1;
 }
 .article {
-    background-color: blue;
+    background-color: #BACBD9;
     grid-row: 3 / span 1;
 }
 .footer {
-    background-color: navajowhite;
+    background-color: #434A59;
     grid-column: 1 / span 2;
 }
