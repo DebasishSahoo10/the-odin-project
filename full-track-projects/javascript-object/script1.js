@@ -3,9 +3,10 @@ function book (tittle, author, pages, readStat) {
     this.author = author
     this.pages = pages
     this.readStat = readStat
-    this.info = function () {
-        return this.tittle + " by " + this.author + "," + this.pages + "," + this.readStat
-    }
+}
+
+book.prototype.info = function () {
+    return this.tittle + " by " + this.author + "," + this.pages + "," + this.readStat
 }
 
 const player1 = new book("The Hobbit","J.R.R. Tolkien","295 pages","not read yet")
