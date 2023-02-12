@@ -14,10 +14,21 @@
 
 const addBtnCard = document.getElementById('add-btn-card')
 const cardContainer = document.getElementById('card-container')
+const newBookBtn = document.getElementById('newBookBtn')
+const newBookForm = document.getElementById('newBookForm')
+const formCloseBtn = document.getElementById('formCloseBtn')
+
+
 
 addBtnCard.addEventListener("click", ()=>{
-    const newCard = document.createElement("div")
-    newCard.className = "card"
-    // console.log("clicked")
-    cardContainer.appendChild(newCard)
+    newBookForm.style.display = "block"
 })
+formCloseBtn.addEventListener("click", ()=>{
+    newBookForm.style.display = "none"
+})
+
+// addBtnCard.addEventListener("click", ()=>{
+//     const newCard = document.createElement("div")
+//     newCard.className = "card"
+//     cardContainer.appendChild(newCard)
+// })
