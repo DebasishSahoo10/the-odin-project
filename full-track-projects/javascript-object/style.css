@@ -33,3 +33,30 @@ body {
     justify-content: center;
     color: black;
 }
+
+
+form {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 35%;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+label {
+    display: block;
+}
+input {
+    width: 80%;
+    height: 20px;
+}
+#read-status {
+    width: 3%;
+}
+#newBookBtn {
+    margin-top: 20px;
+    display: block;
+}
