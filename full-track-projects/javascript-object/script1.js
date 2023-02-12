@@ -29,17 +29,19 @@ function book (tittle, author, pages, readStat) {
 addBtnCard.addEventListener("click", ()=>{
     newBookForm.style.display = "block"
 })
-formCloseBtn.addEventListener("click", ()=>{
+formCloseBtn.addEventListener("click", (event)=>{
+    event.preventDefault()
     newBookForm.style.display = "none"
 })
 newBookBtn.addEventListener("click", (event)=>{
     event.preventDefault()
     const newBook = new book(tittleInput.value, authorInput.value, pagesInput.value, readStatus.checked)
-    // console.log(newBook)
+    myLibrary.push(newBook)
 })
 
-// addBtnCard.addEventListener("click", ()=>{
-//     const newCard = document.createElement("div")
-//     newCard.className = "card"
-//     cardContainer.appendChild(newCard)
-// })
+for (i=0; i<myLibrary.length; i++) {
+    const newCard = document.createElement("div")
+    newCard.innerText = myLibrary[i].tittle
+    newCard.className = "card"
+    cardContainer.appendChild(newCard)
+}
