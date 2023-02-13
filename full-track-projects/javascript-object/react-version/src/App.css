@@ -48,20 +48,16 @@ form {
 }
 label {
   display: block;
+  color: black;
 }
 input {
   width: 80%;
   height: 20px;
 }
-#read-status {
-  width: 3%;
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
-#newBookBtn {
-  margin-top: 20px;
-  display: block;
-}
-
-
-
-
-
