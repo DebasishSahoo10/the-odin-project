@@ -34,7 +34,7 @@ function App() {
               <p>{e.pages}</p>
               <div className='flex'>
                 <p>Read</p>
-                <input type="checkbox" defaultChecked onClick={(a)=>{
+                <input type="checkbox" defaultChecked={e.readStat} onClick={(a)=>{
                   if (e.readStat) {
                     e.readStat = false
                     a.target.checked = false
