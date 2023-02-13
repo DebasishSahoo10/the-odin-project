@@ -5,7 +5,61 @@
   text-align: center;
 }
 
+body {
+  min-height: 100vh;
+}
 
+#card-container {
+  min-width: 80vw;
+  min-height: 80vh;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+#add-btn-card {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+
+form {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+label {
+  display: block;
+}
+input {
+  width: 80%;
+  height: 20px;
+}
+#read-status {
+  width: 3%;
+}
+#newBookBtn {
+  margin-top: 20px;
+  display: block;
+}
 
 
 
