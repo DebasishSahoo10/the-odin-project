@@ -27,7 +27,7 @@ function App() {
       <div id="card-container">
         <div className="card" id="add-btn-card" onClick={()=>setFormState("block")}>+</div>
         
-          {myLibrary.map((e)=>(
+          {myLibrary.map((e, index)=>(
             <div className='card'>
               <h4>{e.tittle}</h4>
               <p>{e.author}</p>
@@ -44,6 +44,11 @@ function App() {
                   }
                 }}/>
               </div>
+              <button onClick={(e)=>{
+                myLibrary.splice(index, 1)
+                console.log(myLibrary)
+                setMyLibrary(old => [...old])
+              }}>Remove Book</button>
             </div>
           ))}
       </div>
