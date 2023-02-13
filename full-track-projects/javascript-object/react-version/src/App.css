@@ -61,3 +61,6 @@ input {
   align-items: center;
   gap: 10px;
 }
+.none {
+  display: none;
+}
