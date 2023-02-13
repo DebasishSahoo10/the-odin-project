@@ -19,7 +19,6 @@ function App() {
     event.preventDefault()
     const newBook = new book(tittle, author, pages, readStat)
     setMyLibrary(old => [...old, newBook])
-    console.log(myLibrary)
   }
 
   return (
@@ -31,9 +30,22 @@ function App() {
           {myLibrary.map((e)=>(
             <div className='card'>
               <h4>{e.tittle}</h4>
+              <p>{e.author}</p>
+              <p>{e.pages}</p>
+              <div className='flex'>
+                <p>Read</p>
+                <input type="checkbox" defaultChecked onClick={(a)=>{
+                  if (e.readStat) {
+                    e.readStat = false
+                    a.target.checked = false
+                  } else {
+                    e.readStat = true
+                    a.target.checked = true
+                  }
+                }}/>
+              </div>
             </div>
           ))}
-        {/* <button onClick={()=>{console.log(myLibrary)}}>test</button> */}
       </div>
     
       <form action="" id="newBookForm" className={formState}>

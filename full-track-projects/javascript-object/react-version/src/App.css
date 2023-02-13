@@ -12,18 +12,23 @@ body {
 #card-container {
   min-width: 80vw;
   min-height: 80vh;
-  background-color: black;
+  background-color: rgb(53, 51, 51);
   border-radius: 10px;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
 }
 
 .card {
   width: 200px;
   height: 250px;
-  background-color: antiquewhite;
+  background-color: rgb(177, 177, 177);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #add-btn-card {
@@ -51,7 +56,6 @@ label {
   color: black;
 }
 input {
-  width: 80%;
   height: 20px;
 }
 .block {
@@ -63,4 +67,12 @@ input {
 }
 .none {
   display: none;
+}
+h4, p {
+  color: Black;
+  margin: 0;
+}
+.flex {
+  display: flex;
+  align-items: center;
 }
