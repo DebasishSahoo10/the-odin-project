@@ -225,12 +225,12 @@ form input {
 
 @media screen and (max-width:715px) {
   #card-container {
-    width: 99vw;
+    width: 98vw;
   }
 }
 @media screen and (max-width:563px) {
   body {
-    max-width: 99vw;
+    max-width: 98vw;
   }
   .header-section {
     flex-direction: column;
@@ -250,10 +250,10 @@ form input {
 }
 @media screen and (max-width:420px) {
   .search-bar {
-    width: 99vw;
+    width: 98vw;
   }
   .user-header {
-    width: 99vw;
+    width: 98vw;
     justify-content: space-between;
   }
 }
