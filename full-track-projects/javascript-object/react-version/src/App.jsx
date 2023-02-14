@@ -51,7 +51,7 @@ function App() {
             <h1>Grab a Book!</h1>
           </div>
           <div>
-            <img src="src\assets\Ellipse 4.png" alt="" className='user-picture'/>
+            <img src="src/assets/Ellipse 4.png" alt="" className='user-picture'/>
           </div>
         </div>
         <div className='search-header'>
