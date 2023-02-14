@@ -7,32 +7,73 @@ function App() {
   const [author, setAuthor] = useState()
   const [pages, setPages] = useState()
   const [readStat, setReadStat] = useState()
-  const [myLibrary, setMyLibrary] = useState([])
+  const [image, setImage] = useState("https://hometownreads.com/images/your-book-here.jpg")
+  const [myLibrary, setMyLibrary] = useState([{
+    tittle: 'Everything',
+    author: 'J.R.R. Tolkien',
+    pages: '295',
+    readStat: false,
+    image : 'https://kottke.org/plus/misc/images/movie-posters-2022-07.jpg'
+  },
+  {
+    tittle: 'Loving Vincent',
+    author: 'J.R.R. Tolkien',
+    pages: '184',
+    readStat: true,
+    image: 'https://m.media-amazon.com/images/M/MV5BMjIwYjU4YjgtZGYyOS00NGZmLTg2MzItODIwYmI2N2FkMjQ5XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg'
+  }])
   
-  function book (tittle, author, pages, readStat) {
+  function book (tittle, author, pages, readStat, image) {
     this.tittle = tittle
     this.author = author
     this.pages = pages
     this.readStat = readStat
+    this.image = image
   }
   const addToLibrary = (event) => {
     event.preventDefault()
-    const newBook = new book(tittle, author, pages, readStat)
+    const newBook = new book(tittle, author, pages, readStat, image)
     setMyLibrary(old => [...old, newBook])
   }
 
   return (
     <div className="App">
 
+      <div className='header-section'>
+        <div className='user-header'>
+          <div>
+            <p className='hey-user'>Hi, Aurora</p>
+            <h1>Grab a Book!</h1>
+          </div>
+          <div>
+            <img src="" alt="" className='user-picture'/>
+          </div>
+        </div>
+        <div className='search-header'>
+          <input type="text" className='search-bar'/>
+          <img src="" alt="" className='qr-bar'/>
+        </div>
+      </div>
+
+      <div className='category-container flex'>
+        <button className='btn-1'>Crime</button>
+        <button className='btn-2'>Comedy</button>
+        <button className='btn-3'>Thriller</button>
+        <button className='btn-4'>Fantasy</button>
+        <button className='btn-5'>Mythology</button>
+      </div>
       <div id="card-container">
         <div className="card" id="add-btn-card" onClick={()=>setFormState("block")}>+</div>
         
           {myLibrary.map((e, index)=>(
-            <div className='card'>
-              <h4>{e.tittle}</h4>
-              <p>{e.author}</p>
-              <p>{e.pages}</p>
-              <div className='flex'>
+            <div className='card' key={e.tittle}>
+              <div className='left-section'>
+              <div className='author-tittle'>
+              <h4 className='tittle'>{e.tittle}</h4>
+              <p className='author'>{e.author}</p>
+            </div>
+            <div>
+            <div className='flex'>
                 <p>Read</p>
                 <input type="checkbox" defaultChecked={e.readStat} onClick={(a)=>{
                   if (e.readStat) {
@@ -44,11 +85,21 @@ function App() {
                   }
                 }}/>
               </div>
+            </div>
+              <div className='flex'>
+              <p className='pages-number'>{e.pages} </p><span className='pages-text'>pages</span>
+              </div>
+              
+              {/* 
               <button onClick={(e)=>{
                 myLibrary.splice(index, 1)
                 console.log(myLibrary)
                 setMyLibrary(old => [...old])
-              }}>Remove Book</button>
+              }}>Remove Book</button> */}
+              </div>
+              <div>
+                <img src={e.image} alt="" className='poster' />
+              </div>
             </div>
           ))}
       </div>

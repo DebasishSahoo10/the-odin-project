@@ -1,34 +1,50 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 body {
   min-height: 100vh;
+  width: 100vw;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFAF0;
+  opacity: 0.9;
+  background-image:  radial-gradient(#505050 0.75px, transparent 0.75px), radial-gradient(#505050 0.75px, #ffffff 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0,15px 15px;
+}
+
+button, input {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #card-container {
-  min-width: 80vw;
+  margin-top: 10px;
+  border-radius: 30px;
+  width: 90vw;
   min-height: 80vh;
-  background-color: rgb(53, 51, 51);
-  border-radius: 10px;
+  background-color: transparent;
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
 }
 
 .card {
-  width: 200px;
-  height: 250px;
-  background-color: rgb(177, 177, 177);
-  border-radius: 10px;
+  /* width: 320px; */
+  height: 170px;
+  border: 1px #1E1E1E solid;
+  background-color: #FFFAF0;
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 5px;
+  overflow: hidden;
 }
 
 #add-btn-card {
@@ -39,6 +55,11 @@ body {
   color: black;
 }
 
+.poster {
+  width: 140px;
+  height: 100%;
+  /* border: 2px #1E1E1E solid; */
+}
 
 form {
   display: none;
@@ -75,4 +96,63 @@ h4, p {
 .flex {
   display: flex;
   align-items: center;
+}
+
+.left-section {
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  height: 90%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.author {
+  color: #505050;
+}
+.pages-text {
+  color: #505050;
+  margin-bottom: 12px;
+  align-self: end;
+}
+.pages-number {
+  font-size: 48px;
+  font-family: 'Lato', sans-serif;
+}
+.tittle {
+  font-size: 22px;
+}
+.author-tittle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.category-container {
+  margin-top: 20px;
+  margin-left: 9px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.category-container button {
+  border: 1px #1E1E1E solid;
+  height: 40px;
+  width: 80px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.btn-1 {
+  background-color: #FFA776;
+}
+.btn-2 {
+  background-color: #FFD787;
+}
+.btn-3 {
+  background-color: #FFA89A;
+}
+.btn-4 {
+  background-color: #ABE5BC;
+}
+.btn-5 {
+  background-color: #CFADE8;
 }
