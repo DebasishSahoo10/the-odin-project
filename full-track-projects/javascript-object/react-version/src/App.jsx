@@ -35,7 +35,7 @@ function App() {
     const newBook = new book(tittle, author, pages, readStat, image)
     setMyLibrary(old => [...old, newBook])
   }
-
+  
   return (
     <div className="App">
 
@@ -75,28 +75,31 @@ function App() {
             </div>
             <div>
             <div className='flex'>
-                <p>Read</p>
-                <input type="checkbox" defaultChecked={e.readStat} onClick={(a)=>{
-                  if (e.readStat) {
-                    e.readStat = false
-                    a.target.checked = false
-                  } else {
-                    e.readStat = true
-                    a.target.checked = true
-                  }
-                }}/>
+                <div className="btn-container">
+                  
+                  <div className='flex'>
+                    <p>Read : </p>
+                    <input type="checkbox" className='check' defaultChecked={e.readStat} onClick={(a)=>{
+                    if (e.readStat) {
+                      e.readStat = false
+                      a.target.checked = false
+                    } else {
+                      e.readStat = true
+                      a.target.checked = true
+                    }
+                    }}/>
+                  </div>
+
+                  {/* <button onClick={()=>{
+                  setMyLibrary(myLibrary.splice(index, 1))
+                  }}>Remove Book</button> */}
+                </div>
               </div>
             </div>
               <div className='flex'>
-              <p className='pages-number'>{e.pages} </p><span className='pages-text'>pages</span>
+                <p className='pages-number'>{e.pages} </p><span className='pages-text'>pages</span>
               </div>
-              
-              {/* 
-              <button onClick={(e)=>{
-                myLibrary.splice(index, 1)
-                console.log(myLibrary)
-                setMyLibrary(old => [...old])
-              }}>Remove Book</button> */}
+      
               </div>
               <div>
                 <img src={e.image} alt="" className='poster' />
