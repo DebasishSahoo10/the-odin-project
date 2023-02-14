@@ -236,6 +236,15 @@ form input {
     
   }
 }
+@media screen and (max-width:520px) {
+  form {
+    width: 80vw;
+    height: 350px;
+  }
+  form input {
+    width: 90%;
+  }
+}
 @media screen and (max-width:420px) {
   .search-bar {
     width: 100vw;
