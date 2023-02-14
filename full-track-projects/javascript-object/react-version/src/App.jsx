@@ -31,9 +31,14 @@ function App() {
     this.image = image
   }
   const addToLibrary = (event) => {
-    event.preventDefault()
-    const newBook = new book(tittle, author, pages, readStat, image)
-    setMyLibrary(old => [...old, newBook])
+    if ( tittle, author, pages, readStat ) {
+      event.preventDefault()
+      const newBook = new book(tittle, author, pages, readStat, image)
+      setMyLibrary(old => [...old, newBook])
+    } else {
+      event.preventDefault()
+      // alert("Fill Up Every Input")
+    }
   }
   
   return (
