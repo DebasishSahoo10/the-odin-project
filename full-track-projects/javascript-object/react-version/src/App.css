@@ -229,6 +229,9 @@ form input {
   }
 }
 @media screen and (max-width:563px) {
+  body {
+    max-width: 99vw;
+  }
   .header-section {
     flex-direction: column;
     gap: 0;
