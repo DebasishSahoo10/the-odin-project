@@ -51,7 +51,7 @@ function App() {
         </div>
         <div className='search-header'>
           <input type="text" className='search-bar' placeholder='👀 Search Feature Coming Soon'/>
-          <img src="" alt="" className='qr-bar'/>
+          {/* <img src="" alt="" className='qr-bar'/> */}
         </div>
       </div>
 
