@@ -225,7 +225,7 @@ form input {
 
 @media screen and (max-width:715px) {
   #card-container {
-    width: 100vw;
+    width: 99vw;
   }
 }
 @media screen and (max-width:563px) {
@@ -247,10 +247,10 @@ form input {
 }
 @media screen and (max-width:420px) {
   .search-bar {
-    width: 100vw;
+    width: 99vw;
   }
   .user-header {
-    width: 100vw;
+    width: 99vw;
     justify-content: space-between;
   }
 }
