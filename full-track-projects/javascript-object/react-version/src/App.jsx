@@ -39,18 +39,18 @@ function App() {
   return (
     <div className="App">
 
-      <div className='header-section'>
-        <div className='user-header'>
+      <div className='header-section flex'>
+        <div className='user-header flex'>
           <div>
             <p className='hey-user'>Hi, Aurora</p>
             <h1>Grab a Book!</h1>
           </div>
           <div>
-            <img src="" alt="" className='user-picture'/>
+            <img src="src\assets\Ellipse 4.png" alt="" className='user-picture'/>
           </div>
         </div>
         <div className='search-header'>
-          <input type="text" className='search-bar'/>
+          <input type="text" className='search-bar' placeholder='👀 Search Feature Coming Soon'/>
           <img src="" alt="" className='qr-bar'/>
         </div>
       </div>
@@ -61,6 +61,7 @@ function App() {
         <button className='btn-3'>Thriller</button>
         <button className='btn-4'>Fantasy</button>
         <button className='btn-5'>Mythology</button>
+        <button className='btn-6'>Categorisation Coming Soon..</button>
       </div>
       <div id="card-container">
         <div className="card" id="add-btn-card" onClick={()=>setFormState("block")}>+</div>

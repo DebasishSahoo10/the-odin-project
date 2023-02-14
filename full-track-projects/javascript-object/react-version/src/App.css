@@ -15,6 +15,7 @@ body {
   background-image:  radial-gradient(#505050 0.75px, transparent 0.75px), radial-gradient(#505050 0.75px, #ffffff 0.75px);
   background-size: 30px 30px;
   background-position: 0 0,15px 15px;
+  margin-top: 20px;
 }
 
 button, input {
@@ -68,9 +69,10 @@ form {
   left: 35%;
   width: 500px;
   height: 400px;
-  background-color: white;
+  background-color: #FFFAF0;
   border-radius: 8px;
   padding: 10px;
+  border: 1px #1E1E1E solid;
 }
 label {
   display: block;
@@ -155,4 +157,39 @@ h4, p {
 }
 .btn-5 {
   background-color: #CFADE8;
+}
+.btn-6 {
+  background-color: #e5abab;
+  width: 200px !important;
+}
+h1 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.hey-user {
+  font-size: larger;
+}
+.user-picture {
+  border: 1px #1E1E1E solid;
+  border-radius: 50%;
+  width: 50px;
+}
+.user-header {
+  gap: 90px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header-section {
+  gap: 90px;
+  align-items: center;
+}
+.search-bar {
+  margin-bottom: 20px;
+  border: 1px #1E1E1E solid;
+  border-radius: 10px;
+  width: 220px;
+  height: 40px;
+}
+input::placeholder {
+  padding-left: 5px;
 }
