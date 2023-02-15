@@ -10,14 +10,14 @@ function App() {
   const [image, setImage] = useState("https://hometownreads.com/images/your-book-here.jpg")
   const [myLibrary, setMyLibrary] = useState([{
     tittle: 'Everything',
-    author: 'J.R.R. Tolkien',
+    author: 'Daniel Kwan',
     pages: '295',
     readStat: false,
     image : 'https://kottke.org/plus/misc/images/movie-posters-2022-07.jpg'
   },
   {
     tittle: 'Loving Vincent',
-    author: 'J.R.R. Tolkien',
+    author: 'Dorota Kobiela',
     pages: '184',
     readStat: true,
     image: 'https://m.media-amazon.com/images/M/MV5BMjIwYjU4YjgtZGYyOS00NGZmLTg2MzItODIwYmI2N2FkMjQ5XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg'
