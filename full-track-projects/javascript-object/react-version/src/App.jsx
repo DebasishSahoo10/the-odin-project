@@ -31,7 +31,7 @@ function App() {
     this.image = image
   }
   const addToLibrary = (event) => {
-    if ( tittle, author, pages ) {
+    if ( tittle && author && pages ) {
       event.preventDefault()
       const newBook = new book(tittle, author, pages, readStat, image)
       setMyLibrary(old => [...old, newBook])
