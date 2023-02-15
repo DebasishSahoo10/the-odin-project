@@ -31,13 +31,13 @@ function App() {
     this.image = image
   }
   const addToLibrary = (event) => {
-    if ( tittle, author, pages, readStat ) {
+    if ( tittle, author, pages ) {
       event.preventDefault()
       const newBook = new book(tittle, author, pages, readStat, image)
       setMyLibrary(old => [...old, newBook])
+      setFormState("none")
     } else {
       event.preventDefault()
-      // alert("Fill Up Every Input")
     }
   }
   
@@ -135,6 +135,11 @@ function App() {
           <button id="formCloseBtn" onClick={(e)=>{
             e.preventDefault()
             setFormState("none")
+            const form = document.getElementById('newBookForm')
+            form.reset()
+            setTittle()
+            setAuthor()
+            setPages()
           }} className='close-btn'>close</button>
         </div>
         
